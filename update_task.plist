@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+
+        <key>Label</key>
+        <string>com.uzum.daemon.plist</string>
+
+        <key>RunAtLoad</key>
+        <true/>
+
+        <key>StartCalendarInterval</key>
+        <array>
+            <dict>
+                <key>Weekday</key>
+                <integer>1</integer>
+                <key>Hour</key>
+                <integer>10</integer>
+                <key>Minute</key>
+                <integer>0</integer>
+            </dict>
+            <dict>
+                <key>Weekday</key>
+                <integer>2</integer>
+                <key>Hour</key>
+                <integer>10</integer>
+                <key>Minute</key>
+                <integer>0</integer>
+            </dict>
+            <dict>
+                <key>Weekday</key>
+                <integer>3</integer>
+                <key>Hour</key>
+                <integer>10</integer>
+                <key>Minute</key>
+                <integer>0</integer>
+            </dict>
+            <dict>
+                <key>Weekday</key>
+                <integer>4</integer>
+                <key>Hour</key>
+                <integer>10</integer>
+                <key>Minute</key>
+                <integer>0</integer>
+            </dict>
+            <dict>
+                <key>Weekday</key>
+                <integer>5</integer>
+                <key>Hour</key>
+                <integer>10</integer>
+                <key>Minute</key>
+                <integer>0</integer>
+            </dict> 
+        </array>
+
+        <key>StandardErrorPath</key>
+        <string>/Users/maelillien/Projects/Python/uzum/update.log</string>
+
+        <key>StandardOutPath</key>
+        <string>/Users/maelillien/Projects/Python/uzum/update.log</string>
+
+        <key>EnvironmentVariables</key>
+        <dict>
+            <key>PATH</key>
+            <string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+        </dict>
+
+        <key>WorkingDirectory</key>
+        <string>/Users/maelillien/Projects/Python/uzum</string>
+
+        <key>ProgramArguments</key>
+        <array>
+            <string>/Users/maelillien/.pyenv/shims/python</string>
+            <string>/Users/maelillien/Projects/Python/uzum/uzum_update.py</string>
+        </array>
+
+    </dict>
+</plist>
+
